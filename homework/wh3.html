@@ -21,6 +21,8 @@
 
           #rect.lefty {
               left: 200px;
+              background: lightgrey;
+              border-radius:100px;
           }
 
       </style>
@@ -30,7 +32,24 @@
         <div id="rect"></div>
 
         <script>
-            // Your work goes here.
+            var rect = document.getElementById('rect');
+            rect.classList.add('bordered');
+
+
+            // Note: you don't have to change anything in this function. Just paste it into 
+            // your program and use it as an event handler.
+
+
+          var leftyClickHandler = function(e) {
+
+            if (e.currentTarget.classList.contains('lefty')) {
+                e.currentTarget.classList.remove('lefty');
+            } else {
+                e.currentTarget.classList.add('lefty');
+            }
+        };
+          rect.addEventListener('click', leftyClickHandler);
+
         </script>
 
     </body>
