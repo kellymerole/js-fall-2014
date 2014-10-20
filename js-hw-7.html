@@ -22,8 +22,25 @@
 	    },
 	    dataType: 'jsonp',
 	    success: function(results) {
-			// results = results;
-		    console.log (results.Array[0]);
+			var firstResult = results.results[0];
+			var concept_name = firstResult.concept_name;
+
+			var div = document.createElement('div'); // <div></div>
+
+			var textNode = document.createTextNode(concept_name); // "New York city"
+
+			div.appendChild(textNode); // <div>New York City</div>
+
+			document.body.appendChild(div);
+
+
+			
+			var jDiv = $('<div>' + concept_name + '</div>');
+
+
+
+
+		    console.log(firstResult);
 	    }
 
 	});
