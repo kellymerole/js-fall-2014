@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+<h1>Hi</h1>
+	<script>
+
+
+	var myKey = "d08b4b4756c9dd4b13d9f9d008b54a5e:10:70034053";
+	var myUrl = "http://api.nytimes.com/svc/semantic/v2/geocodes/query.json?api-key=" + myKey;
+
+	var results;
+
+	$.ajax({
+	    url: "http://api.nytimes.com/svc/semantic/v2/geocodes/query.jsonp?api-key=d08b4b4756c9dd4b13d9f9d008b54a5e:10:70034053",
+	    data: {
+	        'api-key': 'd08b4b4756c9dd4b13d9f9d008b54a5e:10:70034053',
+	        'date_range': '2014-10-13:2014-10-14'
+	    },
+	    dataType: 'jsonp',
+	    success: function(results) {
+			// results = results;
+		    console.log (results.Array[0]);
+	    }
+
+	});
+	
+</script>
+
+
+</body>
+
+
+
+
+
+</html>
