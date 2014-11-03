@@ -19,61 +19,70 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
     <style>
-    html, body{
 
-      
-      font-family: 'Varela Round', sans-serif;
+    html, body{
+      font-family: 'Monaco', 'Varela Round', monospace;
       text-align: center;
       height:100;
       overflow:auto;
     }
+
+    h1{
+      padding:5px;
+      border-bottom: solid 2px black;
+      width: 800px;
+      margin: 20px auto;
+
+    }
+
     .words{
-      text-decoration: underline;
       left:50%
       font-size: 50px;
-      color:lightgrey;
+      color:grey;
       margin-bottom: 20px;
       /*margin:10 50% 50% 0;*/
       /*border-bottom: 2px solid lightgrey;
     }*/
     }
-      .container {
 
+      .container {
         width: 800px;
         height: 500px;
         margin: 50px auto 100px auto;
         overflow: scroll;
-        transform-origin:20% 20%;
-
       }
 
       .zoomLevel{
-
-        border:solid 1px grey;
+        /*border:solid 1px grey;*/
         color:blue;
-        
-
-
+        padding-right: 5px;
       }
 
       .image{
-        zoom:40%;
-
+        /*zoom:10%;*/
+        width: 800px;
+        margin: 0 auto;
+        left: 100px;
+        /*transform-origin: 20px 100px;*/
       }
 
       .footer{
-        background-color: lightgrey;
-        width:100%;
-        height: 100px;
+        border-top: black 2px solid;
+        width:800px;
+        height: 50px;
+        padding-top:10px;
+        margin:auto;
       }
     </style>
    
 </head>
 <body>
-  <div class="words">Zoom</div>
-  <span class="zoomLevel"></span>
+  <h1>Powers of Power</h1>
+  <div class="words">(Scroll to zoom.)</div>
+  <span class="zoomLevel">1.000000000000</span>
+
   <div class="container">
-    <img class"image" src="circuit.jpg">
+    <img class="image" src="power-stations.jpg">
   </div>
   
   <div>
@@ -81,6 +90,6 @@
   </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
     <script src="untitled.js"></script>
-    <div class="footer"></div>
+    <div class="footer"> Cool thing made by Kelly Merole</div>
 </body>
 </html>   
