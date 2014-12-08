@@ -8,3 +8,6 @@ Materials for JS class at the New School
 
 http://kellymerole.github.io/js-fall-2014
 >>>>>>> master
+
+Final Project: 
+http://kellymerole.github.io/js-fall-2014/final.html
