@@ -104,12 +104,19 @@
 	}
 
 	.header, .content {
-		background:#fff;
+		background:#34495e;
 		padding:1em;
 
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
+	}
+	.bacons{
+	background:#34495e;
+	}
+
+.dragons{
+	background:#34495e;
 	}
 
 	.content-full {
@@ -199,7 +206,10 @@
 		<div class="gap gap-100"></div>
 		<canvas id="canvas-2" width="1300" height="500"></canvas>
 
-		<div class="gap gap-50" >Draw here!</div>
+		<div class="gap gap-50" >Progress is impossible without change, and those who cannot change their minds cannot change anything. -
+George Bernard Shaw
+
+</div>
 		<canvas id="canvas-1" width="1300" height="1000"></canvas>
 	
 		<div class="gap gap-50" ></div>
@@ -317,7 +327,7 @@
 		var ctx3 = canvas3.getContext('2d');
 		ctx3.fillStyle = 'black';
 		// ctx3.fillStyle ="black";
-		ctx3.fillRect(0, 0, 1300, 1000);
+		ctx3.fillRect(0, 0, 1500, 1000);
 
 		function drawCanvas3(e){
 			var pos = getMousePos(canvas3, e);
